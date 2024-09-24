@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="xi2mBIO4W0ILwr91qvHoW4mDDawP8OAItuba5ZCZ8H4" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Web</title>
+    <link rel="icon" type="image/png" href="AI.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="styleC.css">
+    <style>
+        .beta {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px 0 0 5px;
+        }
+        .collaborate {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px 0 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="beta">Still in beta</div>
+    <div class="container">
+        <div class="text-container">
+            <h1>V Web</h1>
+            <p>V Web is a place where you can find coding ideas that you can use in your own projects. With V Web, you can learn about coding and how to use it in the future. It's a place where you can look for coding ideas and see how others have used coding to make their own websites and programs. V Web is a place where you can learn and have fun at the same time. In the future, you can use coding to make your own website or program and V Web will be there to help you along the way. So, let's get coding!!!</p>
+        </div>
+        <div class="button-container">
+            <a href="https://github.com/AJsuper007" class="button">Creator</a>
+        </div>
+    </div>
+        <div class="button-container">
+            <a href="https://github.com/V-Web-Org" class="button">Organisation</a>
+        </div>
+    <!-- Script -->
+    <script src="scriptJava.js"></script>
+    <button id="open-button" onclick="toggleSidebar()">
+        Open Sidebar
+    </button>
+    <div class="sidebar" id="sidebar" style="font-size: 0.8rem;">
+        <button id="close-button" style="position: absolute; top: 0; right: 0;" onclick="toggleSidebar()">&times;</button>
+        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 0.5rem;">
+            <h2 style="font-size: 1rem;">Ask me a question!</h2>
+            <div id="answer" style="display: flex; align-items: center; margin-top: 0.5rem;">
+                <img src="AI.png" class="ai-face" style="width: 20px; height: 20px;" />
+                <div id="ai-answer" style="font-size: 0.8rem;"></div>
+            </div>
+            <form style="display: flex; flex-direction: column; align-items: center;">
+                <input type="text" id="question" placeholder="What do you want to know?" style="font-size: 0.8rem; width: 100%;">
+                <button type="submit" style="font-size: 0.8rem;">Ask</button>
+            </form>
+        </div>
+    </div>
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #f1f1f1;
+            transition: left 0.3s ease-in-out;
+        }
+
+        .sidebar.active {
+            left: 0;
+        }
+
+        .sidebar button {
+            display: block;
+            margin: 1rem;
+        }
+    </style>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+    <style>
+        .ai-face {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #333;
+            margin-right: 1rem;
+        }
+    </style>
+</body>
+</html>
+
