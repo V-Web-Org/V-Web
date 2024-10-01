@@ -48,8 +48,8 @@ a {
 }
 
 a:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #ff0000;
+    color: #22ff00;
     transform: scale(1.1);
 }
 
