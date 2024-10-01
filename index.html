@@ -27,9 +27,23 @@
             padding: 5px 10px;
             border-radius: 5px 0 0 5px;
         }
+        /* Course Button Styling */
+        .course-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
     </style>
 </head>
-<body></body>
+<body>
     <div class="beta">Still in beta</div>
     <div class="container">
         <div class="text-container">
@@ -37,20 +51,23 @@
             <div style="display: flex; justify-content: center; align-items: center;">
                 <h3>Empowering Tomorrow's Coders, One Idea at a Time!</h3>
             </div>
-            <p>V Web is a place where you can find coding ideas that you can use in your own projects. With V Web, you can learn about coding and how to use it in the future. It's a place where you can look for coding ideas and see how others have used coding to make their own websites and programs. V Web is a place where you can learn and have fun at the same time. In the future, you can use coding to make your own website or program and V Web will be there to help you along the way. So, let's get coding!!!</p>
+            <p>V Web is a place where you can find coding ideas that you can use in your own projects...</p>
         </div>
         <div class="button-container">
             <a href="https://github.com/AJsuper007" class="button">Creator</a>
         </div>
-    </div>
         <div class="button-container">
             <a href="https://github.com/V-Web-Org" class="button">Organisation</a>
         </div>
+        <!-- Add Beginners Course Button Here -->
+        <div class="button-container">
+            <a href="https://v-web-org.github.io/V-Web/Beginners" class="course-button">Go to Beginners Course</a>
+        </div>
+    </div>
+    
     <!-- Script -->
     <script src="scriptJava.js"></script>
-    <button id="open-button" onclick="toggleSidebar()">
-        Open Sidebar
-    </button>
+    <button id="open-button" onclick="toggleSidebar()">Open Sidebar</button>
     <div class="sidebar" id="sidebar" style="font-size: 0.8rem;">
         <button id="close-button" style="position: absolute; top: 0; right: 0;" onclick="toggleSidebar()">&times;</button>
         <div style="display: flex; flex-direction: column; align-items: center; margin-top: 0.5rem;">
@@ -102,4 +119,3 @@
     </style>
 </body>
 </html>
-
