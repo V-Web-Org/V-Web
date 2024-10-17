@@ -17,7 +17,7 @@ function updateText() {
     var learn = "With V Web, you can learn about coding and how to use it in the future.";
     var fun = "It's a place where you can look for coding ideas and see how others have used coding to make their own websites and programs.";
     var future = "In the future, you can use coding to make your own website or program and V Web will be there to help you along the way.";
-    var callToAction = "So, let's get coding!!!";
+    var callToAction = "So, let's get coding!!!!";
 
     text.textContent = `${message} ${intro} ${learn} ${fun} ${future} ${callToAction}`;
 }
