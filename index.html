@@ -82,18 +82,8 @@
             </div>
             <p>V Web is a place where you can find coding ideas that you can use in your own projects...</p>
         </div>
-        <div class="button-container">
-            <a href="https://github.com/AJsuper007" class="button">Creator</a>
-        </div>
-        <div class="button-container">
-            <a href="https://github.com/V-Web-Org" class="button">Organisation</a>
-        </div>
-        <!-- Course Button Here -->
-        <div class="button-container">
-            <a href="https://vwebcoding.netlify.app/Courses" class="course-button">Courses</a>
     <!-- Script -->
     <script src="scriptJava.js"></script>
-    <button id="open-button" onclick="toggleSidebar()">Open Sidebar</button>
     <div class="sidebar" id="sidebar" style="font-size: 0.8rem;">
         <button id="close-button" style="position: absolute; top: 0; right: 0;" onclick="toggleSidebar()">&times;</button>
         <div style="display: flex; flex-direction: column; align-items: center; margin-top: 0.5rem;">
@@ -108,6 +98,7 @@
             </form>
         </div>
     </div>
+    <button id="open-button" style="position: absolute; top: calc(50% + 200px); left: 50%; transform: translate(-50%, -50%);" onclick="toggleSidebar()">Open Sidebar</button>
     <style>
         .sidebar {
             position: fixed;
