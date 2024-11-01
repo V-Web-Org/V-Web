@@ -9,41 +9,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="styleC.css">
     <style>
-        .beta {
-            position: absolute;
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
             top: 0;
-            right: 0;
-            background-color: #333;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px 0 0 5px;
+            width: 100%;
+            z-index: 100;
         }
-        .collaborate {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background-color: #333;
+
+        .navbar a {
             color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px 0 0 5px;
-        }
-        /* Course Button Styling */
-        .course-button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-bottom: 2px solid #fff;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 5px;
             border-radius: 5px;
+            width: 200px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .search-bar button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div>
+            <a href="https://vwebcoding.netlify.app/">Home</a>
+            <a href="https://vwebcoding.netlify.app/About">About</a>
+            <a href="https://vwebcoding.netlify.app/Services">Services</a>
+            <a href="https://vwebcoding.netlify.app/Contact">Contact</a>
+            <a href="https://vwebcoding.netlify.app/Courses">Courses</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
     <div class="beta">Still in beta</div>
     <div class="container">
         <div class="text-container">
@@ -116,3 +145,4 @@
     </style>
 </body>
 </html>
+
