@@ -57,6 +57,34 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #f1f1f1;
+            transition: left 0.3s ease-in-out;
+            z-index: 101; /* Ensure the sidebar is above the navbar */
+        }
+
+        .sidebar.active {
+            left: 0;
+        }
+
+        .sidebar button {
+            display: block;
+            margin: 1rem;
+        }
+
+        .ai-face {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #333;
+            margin-right: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +110,7 @@
             </div>
             <p>V Web is a place where you can find coding ideas that you can use in your own projects...</p>
         </div>
+    </div>
     <!-- Script -->
     <script src="scriptJava.js"></script>
     <div class="sidebar" id="sidebar" style="font-size: 0.8rem;">
@@ -99,41 +128,12 @@
         </div>
     </div>
     <button id="open-button" style="position: absolute; top: calc(50% + 200px); left: 50%; transform: translate(-50%, -50%);" onclick="toggleSidebar()">Open Sidebar</button>
-    <style>
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            background-color: #f1f1f1;
-            transition: left 0.3s ease-in-out;
-        }
-
-        .sidebar.active {
-            left: 0;
-        }
-
-        .sidebar button {
-            display: block;
-            margin: 1rem;
-        }
-    </style>
     <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('active');
         }
     </script>
-    <style>
-        .ai-face {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #333;
-            margin-right: 1rem;
-        }
-    </style>
 </body>
 </html>
 
