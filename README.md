@@ -2,8 +2,8 @@
 
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/@ajsuper007/vweb.svg)](https://www.npmjs.com/package/@ajsuper007/vweb)
-[![npm downloads](https://img.shields.io/npm/dm/@ajsuper007/vweb.svg)](https://www.npmjs.com/package/@ajsuper007/vweb)
+[![npm version](https://img.shields.io/npm/v/v-web-language.svg)](https://www.npmjs.com/package/v-web-language)
+[![npm downloads](https://img.shields.io/npm/dm/v-web-language.svg)](https://www.npmjs.com/package/v-web-language)
 
 A comprehensive web utility package for modern web development.
 
@@ -11,7 +11,7 @@ A comprehensive web utility package for modern web development.
 
 ## Installation
 
-```npm install @ajsuper007/vweb```
+```npm install v-web-language```
 
 ## Features
 
