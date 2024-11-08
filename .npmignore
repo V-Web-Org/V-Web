@@ -1,0 +1,7 @@
+src/
+tests/
+.github/
+.gitignore
+tsconfig.json
+.prettierrc
+.eslintrc 
