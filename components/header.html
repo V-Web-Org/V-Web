@@ -1,7 +1,7 @@
 <header class="top-bar">
     <div class="logo-container">
         <a href="https://vwebcoding.netlify.app">
-            <img src="/assets/AI.png" alt="V Web Logo" class="logo">
+            <img src="AI.png" alt="V Web Logo" class="logo">
         </a>
     </div>
     
@@ -13,11 +13,32 @@
     </div>
     
     <nav class="main-nav">
-        <a href="https://vwebcoding.netlify.app" class="nav-link">Home</a>
-        <a href="/docs" class="nav-link">Docs</a>
-        <a href="/about" class="nav-link">About</a>
-        <a href="/pricing" class="nav-link">Pricing</a>
-        <a href="https://github.com/V-Web-Org" class="nav-link">GitHub</a>
-        <a href="/pricing" class="nav-link upgrade-btn">Upgrade Pro</a>
+        <!-- Primary Navigation -->
+        <div class="nav-group">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/docs" class="nav-link">Docs</a>
+            <a href="/blog" class="nav-link">Blog</a>
+            <a href="/examples" class="nav-link">Examples</a>
+            
+            <!-- Dropdown for More -->
+            <div class="dropdown">
+                <button class="nav-link dropdown-toggle">More</button>
+                <div class="dropdown-content">
+                    <a href="/about">About</a>
+                    <a href="/pricing">Pricing</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/changelog">Changelog</a>
+                    <a href="/community/guidelines">Guidelines</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Navigation -->
+        <div class="nav-group secondary">
+            <a href="https://github.com/V-Web-Org" class="nav-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="/pricing" class="nav-link upgrade-btn">Upgrade Pro</a>
+        </div>
     </nav>
 </header>

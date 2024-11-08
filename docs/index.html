@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="AI.png">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/docs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>V Web - Documentation</title>
+</head>
+<body>
+    <div class="docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <div class="nav-section">
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#quick-start">Quick Start</a></li>
+                        <li><a href="#basic-concepts">Basic Concepts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-section">
+                    <h3>Core Features</h3>
+                    <ul>
+                        <li><a href="#components">Components</a></li>
+                        <li><a href="#routing">Routing</a></li>
+                        <li><a href="#state-management">State Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li><a href="#optimization">Optimization</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#deployment">Deployment</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="docs-content">
+            <section id="installation">
+                <h1>Installation</h1>
+                <p>Get started with V Web in your project:</p>
+                <pre><code>npm install v-web</code></pre>
+                <p>Or using yarn:</p>
+                <pre><code>yarn add v-web</code></pre>
+            </section>
+
+            <section id="quick-start">
+                <h2>Quick Start</h2>
+                <p>Create your first V Web application:</p>
+                <pre><code>
+import { VWeb } from 'v-web';
+
+const app = new VWeb({
+    element: '#app',
+    data: {
+        message: 'Hello V Web!'
+    }
+});
+                </code></pre>
+            </section>
+
+            <!-- Add more sections as needed -->
+        </main>
+    </div>
+</body>
+</html> 
