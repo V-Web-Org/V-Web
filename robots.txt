@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Sitemap: https://vwebcoding.netlify.app/sitemap.xml 
