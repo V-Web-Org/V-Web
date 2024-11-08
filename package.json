@@ -1,6 +1,6 @@
 {
   "name": "v-web-language",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "A web language package for V programming",
   "main": "src/index.js",
   "scripts": {
