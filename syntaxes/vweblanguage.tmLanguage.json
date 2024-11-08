@@ -1,0 +1,45 @@
+{
+    "name": "VWebLanguage",
+    "scopeName": "source.vweblanguage",
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#methods"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comments"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                "name": "keyword.control.vweblanguage",
+                "match": "\\b(const|new|class|this|Map|Array|Date|return|if)\\b"
+            }]
+        },
+        "methods": {
+            "patterns": [{
+                "name": "support.function.vweblanguage",
+                "match": "\\b(init|createProject|addComponent|addRoute|createTemplate|getProject|listProjects|deleteProject)\\b"
+            }]
+        },
+        "strings": {
+            "patterns": [{
+                "name": "string.quoted.single.vweblanguage",
+                "begin": "'",
+                "end": "'"
+            }]
+        },
+        "comments": {
+            "patterns": [{
+                "name": "comment.line.double-slash.vweblanguage",
+                "match": "//.*$"
+            }]
+        }
+    }
+} 

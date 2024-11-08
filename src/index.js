@@ -1,7 +1,9 @@
 // Main entry point for the package
 class VWeb {
     constructor() {
-        this.version = '1.0.0';
+        this.version = '1.1.5';
+        this.projects = new Map();
+        this.templates = new Map();
     }
 
     // Initialize V web environment
