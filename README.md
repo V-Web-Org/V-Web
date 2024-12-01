@@ -52,3 +52,7 @@ Need help? [Open an issue](https://github.com/ajsuper007/vweb/issues) or contact
 ## License
 
 ISC © [ajsuper007](https://github.com/ajsuper007)
+
+# For fun:
+
+![RickrollNeverGonnaGiveYouUpGIF](https://github.com/user-attachments/assets/c9ab2e6f-9ba1-492a-940c-76e7e9debf7e)
