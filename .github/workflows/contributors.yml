@@ -1,3 +1,51 @@
-            - name: Contributors Action
-  uses: github/contributors@v1.3.0
-          
+name: Monthly contributor report
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "3 2 1 * *"
+
+permissions:
+  contents: read
+
+jobs:
+  contributor_report:
+    name: contributor report
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Get dates for last month
+        shell: bash
+        run: |
+          # Calculate the first day of the previous month
+          start_date=$(date -d "last month" +%Y-%m-01)
+
+          # Calculate the last day of the previous month
+          end_date=$(date -d "$start_date +1 month -1 day" +%Y-%m-%d)
+
+          #Set an environment variable with the date range
+          echo "START_DATE=$start_date" >> "$GITHUB_ENV"
+          echo "END_DATE=$end_date" >> "$GITHUB_ENV"
+
+      - name: Run contributor action
+        uses: github/contributors@v1
+        env:
+          GH_APP_ID: ${{ secrets.GH_APP_ID }}
+          GH_APP_INSTALLATION_ID: ${{ secrets.GH_APP_INSTALLATION_ID }}
+          GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          # GITHUB_APP_ENTERPRISE_ONLY: True --> Set to true when created GHE App needs to communicate with GHE api
+          GH_ENTERPRISE_URL: ${{ github.server_url }}
+          # GH_TOKEN: ${{ steps.app-token.outputs.token }} --> the token input is not used if the github app inputs are set
+          START_DATE: ${{ env.START_DATE }}
+          END_DATE: ${{ env.END_DATE }}
+          ORGANIZATION: <V-Web-Org>
+          SPONSOR_INFO: "true"
+
+      - name: Create issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Monthly contributor report
+          token: ${{ secrets.GITHUB_TOKEN }}
+          content-filepath: ./contributors.md
+          assignees: <https://github.com/AJsuper007>
